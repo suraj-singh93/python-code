@@ -1,0 +1,11 @@
+fp = open("test-file")
+fp1 = open("writeFile","a")
+fp1.write('\n')
+for line in fp:
+    print(type(line))
+    print(fp1.tell())
+    print(line.rstrip())
+    fp1.write(line)
+    print(fp1.tell())
+fp.close()
+fp1.close()
