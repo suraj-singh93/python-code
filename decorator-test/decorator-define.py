@@ -24,7 +24,7 @@ def func(*args):
 def func1(*args):
     return args[0] + args[1]
 #
-func(6,7)
 
-
-print(func1(6,7))
+if __name__ == "__main__":
+    func(6,7)
+    print(func1(6,7))

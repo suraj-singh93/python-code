@@ -17,4 +17,6 @@ def calculate(*args):
         list_output.append(str(int(sqrt((2*50*i)/30))))
     print(','.join(list_output))
 
-calculate(100,150,180)
+if __name__ == "__main__":
+
+    calculate(100,150,180)

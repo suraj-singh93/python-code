@@ -22,7 +22,9 @@ class Sub(Super, metaclass=MetaClass):
         self.x = x
 
 
-t = Sub(1)
-print(t.method())
+if __name__ == "__main__":
+
+    t = Sub(1)
+    print(t.method())
 
 

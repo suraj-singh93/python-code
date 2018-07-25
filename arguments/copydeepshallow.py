@@ -30,6 +30,6 @@ b[0][0] = 6
 print(id(a[0]),id(b[0]),id(c[0]))
 print(id(a[0][0]),id(b[0][0]),id(c[0][0]))
 
-print("new_obj)
+
 
 

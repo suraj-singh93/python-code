@@ -39,9 +39,9 @@ class test_with_slots(object):
     def details(self):
         return id, self.first_name + ' ' + self.last_name
 
-pdb.set_trace()
-obj_with_out_slots = test_without_slots(1,'suraj','singh','2010')
-obj_with_slots = test_with_slots(1,'suraj','singh','2010')
-print(obj_with_out_slots)
-print(obj_with_slots)
+if __name__ == "__main__":
+    obj_with_out_slots = test_without_slots(1,'suraj','singh','2010')
+    obj_with_slots = test_with_slots(1,'suraj','singh','2010')
+    print(obj_with_out_slots)
+    print(obj_with_slots)
 

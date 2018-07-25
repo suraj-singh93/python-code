@@ -30,20 +30,21 @@ class Spam(Eggs, metaclass=SubMeta):
     def meth(self, arg):
         return self.data + arg
 
-print('making instance')
-x = Spam(2)
-print(x.meth(2))
+if __name__ == "__main__":
+    print('making instance')
+    x = Spam(2)
+    print(x.meth(2))
 
-print(x.__class__)
-print(x.__dict__)
+    print(x.__class__)
+    print(x.__dict__)
 
-print(Spam.__class__)
-print(SubMeta.__class__)
-print(SuperMeta.__class__)
-print(Spam.__bases__)
-print(Spam.__mro__)
-print(type(Spam))
-print(type(SubMeta))
-print(type(SuperMeta))
+    print(Spam.__class__)
+    print(SubMeta.__class__)
+    print(SuperMeta.__class__)
+    print(Spam.__bases__)
+    print(Spam.__mro__)
+    print(type(Spam))
+    print(type(SubMeta))
+    print(type(SuperMeta))
 
 

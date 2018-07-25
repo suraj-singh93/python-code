@@ -20,6 +20,7 @@ def matrix_return(rows,columns):
 
     return matrix_list
 
-print(matrix_return(4,5))
+if __name__ == "__main__":
+    print(matrix_return(4,5))
 
 

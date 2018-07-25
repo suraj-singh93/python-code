@@ -10,10 +10,10 @@
 #
 # Finally, the list should be dumped for later usage with the pickle module.
 
-import pdb
+
 import pickle
 city_list = []
-pdb.set_trace()
+
 fb = open("CityDateTime").readlines()
 fb.sort()
 for line in fb:

@@ -39,9 +39,10 @@ class decoratedclasst:
         return self.x + y
 
 
-t = decoratedclasst(2)
+if __name__ == "__main__":
+    t = decoratedclasst(2)
 
-print(t.method_sum(2))
+    print(t.method_sum(2))
 
-y = decoratedclasst(3)
-print(y.method_sum(3))
+    y = decoratedclasst(3)
+    print(y.method_sum(3))

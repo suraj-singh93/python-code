@@ -15,8 +15,8 @@ class test_singleton:
     def sum(self):
         return self.a + 2
 
-
-print(id(test_singleton(2)))
-print(id(test_singleton(3)))
+if __name__ == "__main__":
+    print(id(test_singleton(2)))
+    print(id(test_singleton(3)))
 
 

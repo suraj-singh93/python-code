@@ -50,11 +50,12 @@ class test_class:
         return self.a + self.b + val1
 
 
-print(decorated_func(1, 2, x=3, y=4))
-print(decorated_func(2, 3, x=4, y=10))
-print(decorated_func2(2, 3))
-obj1 = test_class(1, 2)
-print(obj1.decorated_method(10))
+if __name__ == "__main__":
+    print(decorated_func(1, 2, x=3, y=4))
+    print(decorated_func(2, 3, x=4, y=10))
+    print(decorated_func2(2, 3))
+    obj1 = test_class(1, 2)
+    print(obj1.decorated_method(10))
 
 
 

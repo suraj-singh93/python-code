@@ -1,4 +1,3 @@
-
 def conditional_singleton(aclass):
     list_instance = {}
 
@@ -34,11 +33,12 @@ class Singleton(parent):
         print(self.data)
 
 
-x = Singleton(2)
-x.run()
-y = Singleton(3)
-y.run()
-z = Singleton(2)
-z.run()
-z.run1()
+if __name__ == "__main__":
+    x = Singleton(2)
+    x.run()
+    y = Singleton(3)
+    y.run()
+    z = Singleton(2)
+    z.run()
+    z.run1()
 

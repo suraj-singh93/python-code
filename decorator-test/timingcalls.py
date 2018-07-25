@@ -26,6 +26,7 @@ def test1(a):
     time.sleep(1)
     return a + 2
 
-print(test(2,3))
-print(test1(3))
+if __name__ == "__main__":
+    print(test(2,3))
+    print(test1(3))
 

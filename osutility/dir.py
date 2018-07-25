@@ -27,7 +27,7 @@ if __name__== "__main__":
     #     print(os.listdir('/Users/suraj/Desktop/'))
     # except FileNotFoundError as ex:
     #     print(ex)
-    #
+
     # print(os.path.split('/Users/suraj/Desktop'))
     # print(os.path.join(os.sep, 'Users','suraj'))
     # os.listdir()

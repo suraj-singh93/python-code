@@ -16,34 +16,20 @@ class Foo:
         return self.__attr + x
 
 
+if __name__ == "__main__":
+    t = Foo()
+    # accessing private attribute in python
+    print(t._Foo__attr)
+    # can change private attribute
+    t._Foo__attr = 3
 
-t = Foo()
-# accessing private attribute in python
-print(t._Foo__attr)
-# can change private attribute
-t._Foo__attr = 3
+    print(t.attr1)
 
-print(t.attr1)
+    print(t._Foo__attr)
 
-print(t._Foo__attr)
+    print(t.test(3))
 
-print(t.test(3))
+    print(Foo._Foo__attr)
+    print(Foo.test(t, 1))
 
-print(Foo._Foo__attr)
-print(Foo.test(t, 1))
-
-## reverse string
-a = 'yay'
-b = a[::-1]
-
-if a == b:
-    print("yes")
-
-try:
-    with open("test1") as fb:
-        print("hi")
-except FileNotFoundError as fe:
-    print("this")
-except:
-    print("in here")
 

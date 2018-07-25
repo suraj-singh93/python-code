@@ -24,5 +24,5 @@ def password_verification(*args):
         if (13 > len(arg) > 5) and regex.search(r'^.[A-Z].$',arg) and regex.search(r'^.[a-z].$',arg) and re.search('^.[0-9].$',arg) and re.search("[$#@]",arg):
             print("yes")
 
-
-password_verification("rahul" , "rahul@RR7")
+if __name__ == "__main__":
+    password_verification("rahul" , "rahul@RR7")
