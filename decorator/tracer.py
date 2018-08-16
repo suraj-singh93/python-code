@@ -1,3 +1,5 @@
+## Tracer: print number of object created till now.
+
 def decorator_tracer(aclass):
     instance_count = 0
     def oncall(*args, **kwargs):
@@ -15,9 +17,15 @@ class test(object):
 
 
 if __name__ == '__main__':
-    x = test()
-    y = test()
-    z = test()
+    for i in range(3): test()
+
+## output
+    # total object created:  1
+    # total object created:  2
+    # total object created:  3
+
+
+
 
 
 

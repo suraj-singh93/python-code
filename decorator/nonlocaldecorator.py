@@ -10,7 +10,7 @@ def decorator(F):
     def callable(*args, **kwargs):
         nonlocal call_count
         call_count += 1
-        print("trace call count %s: %d" %(F.__name__, call_count))
+        print("total calls to %s: %d" %(F.__name__, call_count))
         return F(*args,**kwargs)
     return callable
 
@@ -19,11 +19,9 @@ def decorator(F):
 def decorate_class(cls):
     class wrapped:
         def __init__(self, *args, **kwargs):
-            print("instance initalized")
             self.cls = cls(*args,**kwargs)
 
         def __getattr__(self, item):
-            print("attribute fetch")
             return getattr(self.cls, item)
 
     return wrapped
@@ -56,6 +54,17 @@ if __name__ == "__main__":
     print(decorated_func2(2, 3))
     obj1 = test_class(1, 2)
     print(obj1.decorated_method(10))
+
+
+# #output:
+#     total calls to decorated_func: 1
+#     10
+#     total calls to decorated_func: 2
+#     19
+#     total calls to decorated_func2: 1
+#     5
+#     total calls to decorated_method: 1
+#     13
 
 
 

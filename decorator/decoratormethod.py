@@ -6,10 +6,6 @@ def decorate_method(F):
     return wrapper
 
 
-
-
-
-
 class method_deocrated:
     def __init__(self,x):
         self.x = x
@@ -24,3 +20,9 @@ if __name__ == "__main__":
     print("id of test instance %s" %(id(test_instance)))
     x = test_instance.perform_add(2,3)
     print(x)
+
+
+    # ##output:
+    # id of test instance 4362862152
+    # class_id: 4362862152
+    # 7

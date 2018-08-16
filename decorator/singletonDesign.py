@@ -20,3 +20,8 @@ if __name__ == "__main__":
     print(id(test_singleton(3)))
 
 
+# output:
+#
+#     4362862096
+#     4362862096
+
